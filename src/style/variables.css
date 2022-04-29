@@ -1,0 +1,126 @@
+:root {
+	--main-color: #000000;
+	--secondary-color: #454546;
+
+	--blue-color: #217ffd;
+	--red-color: #ff7575;
+	--white-color: #ffffff;
+
+	--navbar-color: #333333;
+	--input-color: #7e7e7f;
+
+	--footer-bg-color: #3b3b3b;
+	--bg-main-color: #f4f6f8;
+	--bg-secondary-color: #e9e9e9;
+
+	--disabled-color: #bec0c4;
+	--box-shadow: 0px 100px 80px rgba(143, 153, 191, 0.07),
+		0px 50.997px 33.4221px rgba(143, 153, 191, 0.0503198),
+		0px 12.7598px 17.869px rgba(143, 153, 191, 0.0417275),
+		0px -3.80947px 10.0172px rgba(143, 153, 191, 0.035),
+		0px -7.16826px 5.32008px rgba(143, 153, 191, 0.0282725),
+		0px -4.86427px 2.21381px rgba(143, 153, 191, 0.02);
+	--box-shadow-buttons: 0px 0px 5.32008px rgb(143 153 191 / 8%),
+		0px 0px 2.21381px rgb(143 153 191 / 2%);
+	--mask: rgba(243, 245, 247, 0.6);
+}
+/*  --- Mixins ---  */
+/*  --- Variables ---  */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+	height: 100%;
+	color: var(--main-color);
+}
+
+body.open {
+	overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	font-weight: 700;
+	color: var(--main-color);
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea {
+	color: var(--secondary-color);
+	font-weight: 400;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+select {
+	outline: none;
+	border: none;
+	background: inherit;
+	cursor: pointer;
+	font-size: 12px;
+	align-self: flex-start;
+	color: inherit;
+	color: #595959;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.mt {
+	margin-top: -20px;
+}
+
+.main-bg {
+	background: var(--bg-main-color);
+}
+
+.bg {
+	background: var(--white-color);
+}
+
+.pb {
+	padding-bottom: 40px;
+}
+
+.default {
+	cursor: default;
+	opacity: 0.5;
+}
